@@ -1,0 +1,10 @@
+{
+  "name": "sheng",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx sort-package-json && git diff --name-only --diff-filter=d -z | xargs -r -0 npx prettier --write -u"
+  }
+}
