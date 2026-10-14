@@ -4,6 +4,20 @@
 /logs/
 *.log
 
+# Short-video media stays on disk and out of Git
+内容/短视频/**/*.mp4
+内容/短视频/**/*.mp3
+内容/短视频/**/*.wav
+内容/短视频/**/*.m4a
+内容/短视频/**/*.aac
+内容/短视频/**/*.mov
+内容/短视频/**/*.webm
+内容/短视频/**/*.png
+内容/短视频/**/*.jpg
+内容/短视频/**/*.jpeg
+内容/短视频/**/*.webp
+内容/短视频/**/*.gif
+
 # Node
 node_modules/
 /build/

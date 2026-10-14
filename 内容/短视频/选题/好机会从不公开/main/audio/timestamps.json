@@ -1,0 +1,820 @@
+{
+  "voice": "longlaobo_v3",
+  "model": "cosyvoice-v3-flash",
+  "speechRate": 1.3,
+  "sampleRate": 24000,
+  "duration": 23.691,
+  "leadSilence": 0.18,
+  "preRoll": 0.03,
+  "tail": 0.55,
+  "pausePeriod": 0.3,
+  "pauseInner": 0.14,
+  "sentences": [
+    {
+      "text": "好机会从不公开。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "好",
+          "begin": 0.21,
+          "end": 0.487,
+          "spoken": true
+        },
+        {
+          "ch": "机",
+          "begin": 0.487,
+          "end": 0.702,
+          "spoken": true
+        },
+        {
+          "ch": "会",
+          "begin": 0.702,
+          "end": 0.887,
+          "spoken": true
+        },
+        {
+          "ch": "从",
+          "begin": 1.01,
+          "end": 1.195,
+          "spoken": true
+        },
+        {
+          "ch": "不",
+          "begin": 1.287,
+          "end": 1.502,
+          "spoken": true
+        },
+        {
+          "ch": "公",
+          "begin": 1.533,
+          "end": 1.718,
+          "spoken": true
+        },
+        {
+          "ch": "开",
+          "begin": 1.718,
+          "end": 1.933,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 1.933,
+          "end": 1.933,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "好的岗位，先问自己人。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "好",
+          "begin": 2.233,
+          "end": 2.449,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 2.449,
+          "end": 2.541,
+          "spoken": true
+        },
+        {
+          "ch": "岗",
+          "begin": 2.572,
+          "end": 2.726,
+          "spoken": true
+        },
+        {
+          "ch": "位",
+          "begin": 2.757,
+          "end": 2.91,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 2.91,
+          "end": 2.91,
+          "spoken": false
+        },
+        {
+          "ch": "先",
+          "begin": 3.157,
+          "end": 3.341,
+          "spoken": true
+        },
+        {
+          "ch": "问",
+          "begin": 3.372,
+          "end": 3.495,
+          "spoken": true
+        },
+        {
+          "ch": "自",
+          "begin": 3.495,
+          "end": 3.71,
+          "spoken": true
+        },
+        {
+          "ch": "己",
+          "begin": 3.71,
+          "end": 3.895,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 3.926,
+          "end": 4.049,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 4.049,
+          "end": 4.049,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "好的项目，先找信得过的人。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "好",
+          "begin": 4.349,
+          "end": 4.564,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 4.564,
+          "end": 4.656,
+          "spoken": true
+        },
+        {
+          "ch": "项",
+          "begin": 4.656,
+          "end": 4.872,
+          "spoken": true
+        },
+        {
+          "ch": "目",
+          "begin": 4.903,
+          "end": 5.087,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 5.087,
+          "end": 5.087,
+          "spoken": false
+        },
+        {
+          "ch": "先",
+          "begin": 5.21,
+          "end": 5.395,
+          "spoken": true
+        },
+        {
+          "ch": "找",
+          "begin": 5.426,
+          "end": 5.61,
+          "spoken": true
+        },
+        {
+          "ch": "信",
+          "begin": 5.641,
+          "end": 5.795,
+          "spoken": true
+        },
+        {
+          "ch": "得",
+          "begin": 5.826,
+          "end": 5.979,
+          "spoken": true
+        },
+        {
+          "ch": "过",
+          "begin": 5.979,
+          "end": 6.195,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 6.226,
+          "end": 6.318,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 6.318,
+          "end": 6.441,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 6.441,
+          "end": 6.441,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "好的生意，先在熟人之间流转。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "好",
+          "begin": 6.741,
+          "end": 6.988,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 6.988,
+          "end": 7.08,
+          "spoken": true
+        },
+        {
+          "ch": "生",
+          "begin": 7.08,
+          "end": 7.234,
+          "spoken": true
+        },
+        {
+          "ch": "意",
+          "begin": 7.265,
+          "end": 7.418,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 7.418,
+          "end": 7.418,
+          "spoken": false
+        },
+        {
+          "ch": "先",
+          "begin": 7.634,
+          "end": 7.788,
+          "spoken": true
+        },
+        {
+          "ch": "在",
+          "begin": 7.818,
+          "end": 8.003,
+          "spoken": true
+        },
+        {
+          "ch": "熟",
+          "begin": 8.003,
+          "end": 8.218,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 8.249,
+          "end": 8.341,
+          "spoken": true
+        },
+        {
+          "ch": "之",
+          "begin": 8.372,
+          "end": 8.526,
+          "spoken": true
+        },
+        {
+          "ch": "间",
+          "begin": 8.526,
+          "end": 8.68,
+          "spoken": true
+        },
+        {
+          "ch": "流",
+          "begin": 8.711,
+          "end": 8.865,
+          "spoken": true
+        },
+        {
+          "ch": "转",
+          "begin": 8.895,
+          "end": 9.08,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 9.08,
+          "end": 9.08,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "等它公开，已经是别人挑剩下的。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "等",
+          "begin": 9.38,
+          "end": 9.503,
+          "spoken": true
+        },
+        {
+          "ch": "它",
+          "begin": 9.565,
+          "end": 9.688,
+          "spoken": true
+        },
+        {
+          "ch": "公",
+          "begin": 9.688,
+          "end": 9.842,
+          "spoken": true
+        },
+        {
+          "ch": "开",
+          "begin": 9.873,
+          "end": 10.057,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 10.057,
+          "end": 10.057,
+          "spoken": false
+        },
+        {
+          "ch": "已",
+          "begin": 10.273,
+          "end": 10.457,
+          "spoken": true
+        },
+        {
+          "ch": "经",
+          "begin": 10.457,
+          "end": 10.58,
+          "spoken": true
+        },
+        {
+          "ch": "是",
+          "begin": 10.58,
+          "end": 10.703,
+          "spoken": true
+        },
+        {
+          "ch": "别",
+          "begin": 10.703,
+          "end": 10.857,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 10.857,
+          "end": 10.98,
+          "spoken": true
+        },
+        {
+          "ch": "挑",
+          "begin": 11.011,
+          "end": 11.196,
+          "spoken": true
+        },
+        {
+          "ch": "剩",
+          "begin": 11.226,
+          "end": 11.411,
+          "spoken": true
+        },
+        {
+          "ch": "下",
+          "begin": 11.473,
+          "end": 11.626,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 11.626,
+          "end": 11.749,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 11.749,
+          "end": 11.749,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "一个人真正的竞争力，是机会出现时，有没有人第一时间想到你。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "一",
+          "begin": 12.049,
+          "end": 12.202,
+          "spoken": true
+        },
+        {
+          "ch": "个",
+          "begin": 12.202,
+          "end": 12.295,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 12.295,
+          "end": 12.387,
+          "spoken": true
+        },
+        {
+          "ch": "真",
+          "begin": 12.418,
+          "end": 12.572,
+          "spoken": true
+        },
+        {
+          "ch": "正",
+          "begin": 12.572,
+          "end": 12.818,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 12.849,
+          "end": 12.941,
+          "spoken": true
+        },
+        {
+          "ch": "竞",
+          "begin": 12.941,
+          "end": 13.064,
+          "spoken": true
+        },
+        {
+          "ch": "争",
+          "begin": 13.126,
+          "end": 13.249,
+          "spoken": true
+        },
+        {
+          "ch": "力",
+          "begin": 13.279,
+          "end": 13.402,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 13.402,
+          "end": 13.402,
+          "spoken": false
+        },
+        {
+          "ch": "是",
+          "begin": 13.679,
+          "end": 13.864,
+          "spoken": true
+        },
+        {
+          "ch": "机",
+          "begin": 13.864,
+          "end": 14.018,
+          "spoken": true
+        },
+        {
+          "ch": "会",
+          "begin": 14.049,
+          "end": 14.172,
+          "spoken": true
+        },
+        {
+          "ch": "出",
+          "begin": 14.202,
+          "end": 14.356,
+          "spoken": true
+        },
+        {
+          "ch": "现",
+          "begin": 14.387,
+          "end": 14.541,
+          "spoken": true
+        },
+        {
+          "ch": "时",
+          "begin": 14.572,
+          "end": 14.787,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 14.787,
+          "end": 14.787,
+          "spoken": false
+        },
+        {
+          "ch": "有",
+          "begin": 14.972,
+          "end": 15.156,
+          "spoken": true
+        },
+        {
+          "ch": "没",
+          "begin": 15.187,
+          "end": 15.31,
+          "spoken": true
+        },
+        {
+          "ch": "有",
+          "begin": 15.31,
+          "end": 15.433,
+          "spoken": true
+        },
+        {
+          "ch": "人",
+          "begin": 15.433,
+          "end": 15.556,
+          "spoken": true
+        },
+        {
+          "ch": "第",
+          "begin": 15.556,
+          "end": 15.741,
+          "spoken": true
+        },
+        {
+          "ch": "一",
+          "begin": 15.741,
+          "end": 15.956,
+          "spoken": true
+        },
+        {
+          "ch": "时",
+          "begin": 15.956,
+          "end": 16.11,
+          "spoken": true
+        },
+        {
+          "ch": "间",
+          "begin": 16.141,
+          "end": 16.233,
+          "spoken": true
+        },
+        {
+          "ch": "想",
+          "begin": 16.264,
+          "end": 16.51,
+          "spoken": true
+        },
+        {
+          "ch": "到",
+          "begin": 16.541,
+          "end": 16.726,
+          "spoken": true
+        },
+        {
+          "ch": "你",
+          "begin": 16.726,
+          "end": 16.879,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 16.879,
+          "end": 16.879,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "所以真正值钱的，不是又加一个好友。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "所",
+          "begin": 17.179,
+          "end": 17.364,
+          "spoken": true
+        },
+        {
+          "ch": "以",
+          "begin": 17.364,
+          "end": 17.487,
+          "spoken": true
+        },
+        {
+          "ch": "真",
+          "begin": 17.487,
+          "end": 17.61,
+          "spoken": true
+        },
+        {
+          "ch": "正",
+          "begin": 17.61,
+          "end": 17.794,
+          "spoken": true
+        },
+        {
+          "ch": "值",
+          "begin": 17.825,
+          "end": 18.01,
+          "spoken": true
+        },
+        {
+          "ch": "钱",
+          "begin": 18.071,
+          "end": 18.194,
+          "spoken": true
+        },
+        {
+          "ch": "的",
+          "begin": 18.225,
+          "end": 18.256,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 18.256,
+          "end": 18.256,
+          "spoken": false
+        },
+        {
+          "ch": "不",
+          "begin": 18.533,
+          "end": 18.687,
+          "spoken": true
+        },
+        {
+          "ch": "是",
+          "begin": 18.687,
+          "end": 18.81,
+          "spoken": true
+        },
+        {
+          "ch": "又",
+          "begin": 18.902,
+          "end": 18.994,
+          "spoken": true
+        },
+        {
+          "ch": "加",
+          "begin": 19.087,
+          "end": 19.21,
+          "spoken": true
+        },
+        {
+          "ch": "一",
+          "begin": 19.241,
+          "end": 19.302,
+          "spoken": true
+        },
+        {
+          "ch": "个",
+          "begin": 19.333,
+          "end": 19.425,
+          "spoken": true
+        },
+        {
+          "ch": "好",
+          "begin": 19.425,
+          "end": 19.579,
+          "spoken": true
+        },
+        {
+          "ch": "友",
+          "begin": 19.579,
+          "end": 19.733,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 19.733,
+          "end": 19.733,
+          "spoken": false
+        }
+      ]
+    },
+    {
+      "text": "而是有一个好圈子，让机会主动流向你。",
+      "english": false,
+      "endsWithPeriod": true,
+      "chars": [
+        {
+          "ch": "而",
+          "begin": 20.033,
+          "end": 20.156,
+          "spoken": true
+        },
+        {
+          "ch": "是",
+          "begin": 20.156,
+          "end": 20.31,
+          "spoken": true
+        },
+        {
+          "ch": "有",
+          "begin": 20.464,
+          "end": 20.618,
+          "spoken": true
+        },
+        {
+          "ch": "一",
+          "begin": 20.648,
+          "end": 20.71,
+          "spoken": true
+        },
+        {
+          "ch": "个",
+          "begin": 20.71,
+          "end": 20.833,
+          "spoken": true
+        },
+        {
+          "ch": "好",
+          "begin": 20.895,
+          "end": 20.987,
+          "spoken": true
+        },
+        {
+          "ch": "圈",
+          "begin": 21.018,
+          "end": 21.202,
+          "spoken": true
+        },
+        {
+          "ch": "子",
+          "begin": 21.264,
+          "end": 21.418,
+          "spoken": true
+        },
+        {
+          "ch": "，",
+          "begin": 21.418,
+          "end": 21.418,
+          "spoken": false
+        },
+        {
+          "ch": "让",
+          "begin": 21.695,
+          "end": 21.848,
+          "spoken": true
+        },
+        {
+          "ch": "机",
+          "begin": 21.879,
+          "end": 22.064,
+          "spoken": true
+        },
+        {
+          "ch": "会",
+          "begin": 22.064,
+          "end": 22.218,
+          "spoken": true
+        },
+        {
+          "ch": "主",
+          "begin": 22.248,
+          "end": 22.433,
+          "spoken": true
+        },
+        {
+          "ch": "动",
+          "begin": 22.464,
+          "end": 22.587,
+          "spoken": true
+        },
+        {
+          "ch": "流",
+          "begin": 22.648,
+          "end": 22.772,
+          "spoken": true
+        },
+        {
+          "ch": "向",
+          "begin": 22.833,
+          "end": 22.987,
+          "spoken": true
+        },
+        {
+          "ch": "你",
+          "begin": 22.987,
+          "end": 23.141,
+          "spoken": true
+        },
+        {
+          "ch": "。",
+          "begin": 23.141,
+          "end": 23.141,
+          "spoken": false
+        }
+      ]
+    }
+  ]
+}
