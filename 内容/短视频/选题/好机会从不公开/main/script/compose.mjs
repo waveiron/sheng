@@ -21,7 +21,7 @@ const shownText = timing.sentences
 const assetRun = spawnSync(
   "/tmp/hf-font/bin/python",
   [
-    resolve(ROOT, "scripts/prepare_assets.py"),
+    resolve(ROOT, "script/prepare_assets.py"),
     shownText + " ",
     String(FONT_SIZE),
     String(LOGO_WIDTH),
@@ -249,7 +249,7 @@ const html = `<!doctype html>
     <style>
       @font-face {
         font-family: "ShengText";
-        src: url("assets/fonts/HiraginoSansGB-W6.otf") format("opentype");
+        src: url("asset/font/HiraginoSansGB-W6.otf") format("opentype");
         font-weight: 600;
         font-style: normal;
       }
@@ -319,7 +319,7 @@ const html = `<!doctype html>
     >
       <div id="plate"></div>
       <div id="stage">
-        <img id="logo" class="clip" alt="" src="assets/logo.png" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="1" />
+        <img id="logo" class="clip" alt="" src="asset/logo.png" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="1" />
 ${htmlLines}
       </div>
       <audio id="voice" src="audio/voice.wav" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="0" data-volume="1"></audio>

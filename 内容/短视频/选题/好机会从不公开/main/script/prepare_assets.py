@@ -38,7 +38,7 @@ options.notdef_outline = True
 subsetter = Subsetter(options=options)
 subsetter.populate(text=TEXT)
 subsetter.subset(font)
-font_dir = ROOT / "assets" / "fonts"
+font_dir = ROOT / "asset" / "font"
 font_dir.mkdir(parents=True, exist_ok=True)
 font_out = font_dir / "HiraginoSansGB-W6.otf"
 font.save(str(font_out))
@@ -47,7 +47,7 @@ image = Image.open(LOGO_SRC).convert("RGBA")
 cropped = image.crop(image.getbbox())
 height = max(1, round(cropped.height * (LOGO_WIDTH / cropped.width)))
 resized = cropped.resize((LOGO_WIDTH, height), Image.Resampling.LANCZOS)
-logo_out = ROOT / "assets" / "logo.png"
+logo_out = ROOT / "asset" / "logo.png"
 resized.save(logo_out)
 
 json.dump(
@@ -55,7 +55,7 @@ json.dump(
         "widths": widths,
         "lineBox": line_box,
         "logoHeight": height,
-        "font": "assets/fonts/HiraginoSansGB-W6.otf",
+        "font": "asset/font/HiraginoSansGB-W6.otf",
     },
     sys.stdout,
     ensure_ascii=False,
