@@ -14,7 +14,9 @@ const FADE_OUT = 0.18;
 const FRAME_W = 1080;
 const FRAME_H = 1920;
 
-const timing = JSON.parse(readFileSync(resolve(ROOT, "audio/timestamps.json"), "utf8"));
+const timing = JSON.parse(
+  readFileSync(resolve(ROOT, "audio/timestamps.json"), "utf8"),
+);
 const shownText = timing.sentences
   .map((sentence) => sentence.chars.map((item) => item.ch).join(""))
   .join("");
@@ -65,7 +67,9 @@ function segmentsOf(text) {
     }
   }
   parts.push(buf);
-  return parts.map((part, index) => (index > 0 ? part.replace(/^ /u, "") : part));
+  return parts.map((part, index) =>
+    index > 0 ? part.replace(/^ /u, "") : part,
+  );
 }
 
 function wrapCharacters(text) {
@@ -106,7 +110,10 @@ function wordsOf(text) {
 }
 
 function linePixelWidth(words) {
-  return words.reduce((sum, word, index) => sum + word.width + (index ? spaceWidth : 0), 0);
+  return words.reduce(
+    (sum, word, index) => sum + word.width + (index ? spaceWidth : 0),
+    0,
+  );
 }
 
 function wrapWords(text) {
@@ -130,12 +137,21 @@ function wrapWords(text) {
   const breaks = [];
   const consider = (cuts) => {
     const lines = [];
-    for (let i = 0; i < cuts.length - 1; i++) lines.push(words.slice(cuts[i], cuts[i + 1]));
+    for (let i = 0; i < cuts.length - 1; i++)
+      lines.push(words.slice(cuts[i], cuts[i + 1]));
     if (lines.some((line) => line.length === 0)) return;
     const widths = lines.map(linePixelWidth);
-    if (widths.some((value, index) => value > MAX_WIDTH && lines[index].length > 1)) return;
+    if (
+      widths.some(
+        (value, index) => value > MAX_WIDTH && lines[index].length > 1,
+      )
+    )
+      return;
     const mean = widths.reduce((sum, value) => sum + value, 0) / widths.length;
-    const variance = widths.reduce((sum, value) => sum + (value - mean) ** 2, 0);
+    const variance = widths.reduce(
+      (sum, value) => sum + (value - mean) ** 2,
+      0,
+    );
     const spread = Math.max(...widths) - Math.min(...widths);
     if (
       !best ||
@@ -150,7 +166,11 @@ function wrapWords(text) {
       consider([0, ...breaks, words.length]);
       return;
     }
-    for (let index = start; index <= words.length - (minLines - breaks.length); index++) {
+    for (
+      let index = start;
+      index <= words.length - (minLines - breaks.length);
+      index++
+    ) {
       breaks.push(index);
       walk(index + 1);
       breaks.pop();
@@ -158,7 +178,9 @@ function wrapWords(text) {
   };
   if (minLines === 1) consider([0, words.length]);
   else walk(1);
-  return (best?.lines || [words]).map((line) => line.map((word) => word.text).join(" "));
+  return (best?.lines || [words]).map((line) =>
+    line.map((word) => word.text).join(" "),
+  );
 }
 
 function layoutSentence(sentence) {
@@ -185,10 +207,22 @@ function fades(duration, isLast) {
 const duration = timing.duration;
 const sentences = timing.sentences.map((sentence, index) => {
   const lines = layoutSentence(sentence);
-  const visible = sentence.chars.filter((item) => item.ch !== "，" && item.ch !== "," && item.ch !== "。" && item.ch !== ".");
+  const visible = sentence.chars.filter(
+    (item) =>
+      item.ch !== "，" &&
+      item.ch !== "," &&
+      item.ch !== "。" &&
+      item.ch !== ".",
+  );
   const start = visible[0]?.begin ?? sentence.chars[0].begin;
   const next = timing.sentences[index + 1];
-  const nextVisible = next?.chars.find((item) => item.ch !== "，" && item.ch !== "," && item.ch !== "。" && item.ch !== ".");
+  const nextVisible = next?.chars.find(
+    (item) =>
+      item.ch !== "，" &&
+      item.ch !== "," &&
+      item.ch !== "。" &&
+      item.ch !== ".",
+  );
   const end = next ? (nextVisible?.begin ?? next.chars[0].begin) : duration;
   const fade = fades(end - start, !next);
   const timed = sentence.chars.filter((item) => !"，,。.".includes(item.ch));
@@ -207,25 +241,37 @@ const sentences = timing.sentences.map((sentence, index) => {
     }
     chars.push(row);
   }
-  if (cursor !== timed.length) throw new Error(`排版和文案不一致：${sentence.text}`);
-  const widths = lines.map((line) => Array.from(line).reduce((sum, ch) => sum + widthOf(ch === " " ? " " : ch), 0));
+  if (cursor !== timed.length)
+    throw new Error(`排版和文案不一致：${sentence.text}`);
+  const widths = lines.map((line) =>
+    Array.from(line).reduce(
+      (sum, ch) => sum + widthOf(ch === " " ? " " : ch),
+      0,
+    ),
+  );
   return { lines, chars, start, end, ...fade, widths, text: sentence.text };
 });
 
 for (const sentence of sentences) {
   for (const width of sentence.widths) {
-    if (width > MAX_WIDTH + 0.5) console.log(`超宽 ${width.toFixed(1)} ${sentence.text}`);
+    if (width > MAX_WIDTH + 0.5)
+      console.log(`超宽 ${width.toFixed(1)} ${sentence.text}`);
   }
 }
 
-const lastSpoken = [...timing.sentences[timing.sentences.length - 1].chars].reverse().find((item) => item.spoken);
+const lastSpoken = [...timing.sentences[timing.sentences.length - 1].chars]
+  .reverse()
+  .find((item) => item.spoken);
 const htmlLines = sentences
   .map((sentence, index) => {
     const lines = sentence.chars
       .map(
         (line) =>
           `            <div class="line">${line
-            .map((item) => `<span class="ch" data-on="${item.on.toFixed(3)}">${escapeHtml(item.ch)}</span>`)
+            .map(
+              (item) =>
+                `<span class="ch" data-on="${item.on.toFixed(3)}">${escapeHtml(item.ch)}</span>`,
+            )
             .join("")}</div>`,
       )
       .join("\n");
@@ -322,7 +368,8 @@ const html = `<!doctype html>
         <img id="logo" class="clip" alt="" src="asset/logo.png" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="1" />
 ${htmlLines}
       </div>
-      <audio id="voice" src="audio/voice.wav" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="0" data-volume="1"></audio>
+      <audio id="voice" src="audio/voice.wav" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="0" data-volume="1" data-audio-group="voiceover"></audio>
+      <audio id="music-bed" src=".media/audio/bgm/bgm_001.wav" data-start="0" data-duration="${duration.toFixed(3)}" data-track-index="3" data-volume="1" data-audio-group="music" data-automation='{"version":1,"lanes":[{"target":"volume","points":[{"t":0,"v":0},{"t":1.2,"v":1},{"t":${Math.max(0, duration - 1.191).toFixed(3)},"v":1},{"t":${duration.toFixed(3)},"v":0}]}]}'></audio>
     </div>
     <script>
       document.fonts.ready.then(() => {
@@ -354,7 +401,9 @@ ${htmlLines}
 `;
 
 writeFileSync(resolve(ROOT, "index.html"), html);
-console.log(`duration ${duration.toFixed(3)} lastSound ${lastSpoken.end.toFixed(3)} logoH ${prepared.logoHeight} lineBox ${prepared.lineBox}`);
+console.log(
+  `duration ${duration.toFixed(3)} lastSound ${lastSpoken.end.toFixed(3)} logoH ${prepared.logoHeight} lineBox ${prepared.lineBox}`,
+);
 for (const sentence of sentences) {
   console.log(
     `${sentence.start.toFixed(3)}-${sentence.end.toFixed(3)} fade ${sentence.fadeIn.toFixed(3)}/${sentence.fadeOut.toFixed(3)} lines ${sentence.lines.length} ${sentence.lines.map((line) => line).join(" / ")}`,
